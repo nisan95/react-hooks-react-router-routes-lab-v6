@@ -19,7 +19,7 @@ function Home() {
         {/* Info goes here! */}
         <h1>Home Page</h1>
         <ul>
-          {movies.map((movie)=> <li key={movie.id}><MovieCard title={movie.title} id={movie.id} info={"/View Info/"}/></li> )}
+          {movies && movies.map((movie)=> <li key={movie.id}><MovieCard title={movie.title} id={movie.id} info={"View Info"}/></li> )}
         </ul>
       </main>
     </>

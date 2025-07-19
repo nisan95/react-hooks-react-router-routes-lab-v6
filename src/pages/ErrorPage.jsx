@@ -1,11 +1,12 @@
-import { useRouteError } from "react-router-dom";
+function ErrorPage() {
 
-export default function ErrorPage() {
-  const error = useRouteError(); // donne l'erreur rencontrée
-  return (
-    <div>
-      <h1>Erreur</h1>
-      <p>{error.statusText || error.message}</p>
+return(
+    <div style={{textAlign: "center", padding: "2rem"}}>
+        <h1>404</h1>
+        <p>/Oops! Looks like something went wrong./.</p>
     </div>
-  );
+);
+
 }
+
+export default ErrorPage;

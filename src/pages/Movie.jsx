@@ -20,7 +20,7 @@ function Movie() {
         <h1>{Movie.title}</h1>
         <p>{Movie.time}</p>
         {
-          /*Movie.genres && Movie.genres.map((genre) => <span key={genre}>{genre}</span>)*/
+          Movie.genres && Movie.genres.map((genre) => <span key={genre}>{genre}</span>)
         }
       </main>
     </>

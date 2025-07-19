@@ -1,22 +1,20 @@
 import Directors from "./pages/Directors";
 import Movie from "./pages/Movie";
 import Actors from "./pages/Actors";
-import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
-import NotFound from "./pages/NotFound";
+import App from "./pages/App";
 
 const routes = [
     {
   path: "/",
-  element: <NavBar />,
-  errorElement: <ErrorPage />,
+  element: <App />,
   children:[
     { path: "", element: <Home /> },
     { path: "/directors", element: <Directors /> },
     { path: "/actors", element: <Actors /> },
     { path: "/movie/:id", element: <Movie /> },
-    { path: "*", element: <NotFound /> },
+    { path: "*", element: <ErrorPage /> },
   ],
  
 }
